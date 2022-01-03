@@ -1,8 +1,18 @@
 <h1><%= @team[:name] %></h1>
+<%= link_to  "Team Roster", team_players_path(@team[:id]) %>
 <p>City: <%= @team[:venue][:city] %></p>
 <p>Abbreviation: <%= @team[:abbreviation] %></p>
 <p>Venue: <%= @team[:venue][:name] %></p>
 <p>First Year of Play: <%= @team[:firstYearOfPlay] %></p>
 <p>Division: <%= @team[:division][:name] %></p>
+<h3>Next Game: <%= @next_game[:date] %></h3>
+<h3>Home Team: <%= @next_game[:games].first[:teams][:home][:team][:name] %></h3>
+<p>Wins: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %>
+<p>Losses: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %>
+<p>Overtime Losses: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %></p>
+<h3>Away Team: <%= @next_game[:games].first[:teams][:away][:team][:name] %></h3>
+<p>Wins: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %>
+<p>Losses: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %>
+<p>Overtime Losses: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %></p>
+<h1>Score: <%= @next_game[:games].first[:teams][:home][:score] %> - <%= @next_game[:games].first[:teams][:away][:score] %></h1>
 
-<%= link_to  "Team Roster", team_players_path(@team[:id]) %>

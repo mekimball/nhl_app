@@ -6,4 +6,8 @@ class PlayerFacade
       Player.new(player)
     end
   end
+
+  def self.player(player_id)
+    PlayerService.player_details(player_id)
+  end
 end

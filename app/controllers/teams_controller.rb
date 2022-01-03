@@ -6,5 +6,6 @@ class TeamsController < ApplicationController
   def show
     render  = TeamFacade.single_team(params[:id])
     @team   = render[:teams].first
+    @next_game = @team[:nextGameSchedule][:dates].first
   end
 end

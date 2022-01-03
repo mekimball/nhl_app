@@ -5,4 +5,10 @@ class PlayerService
     all = JSON.parse(response.body, symbolize_names: true)
     all[:roster]
   end
+
+  def self.player_details(player_id)
+    response = Faraday.get("https://statsapi.web.nhl.com/api/v1/people/#{player_id}")
+    all = JSON.parse(response.body, symbolize_names: true)
+    all[:people]
+  end
 end

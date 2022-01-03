@@ -5,4 +5,8 @@ class PlayersController < ApplicationController
     @team   = render[:teams].first
     @players = PlayerFacade.players(params[:team_id])
   end
+
+  def show
+    @player = PlayerFacade.player(params[:id]).first
+  end
 end

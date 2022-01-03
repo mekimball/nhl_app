@@ -1,0 +1,19 @@
+<h1><%= @player[:fullName] %></h1>
+<p> Number: <%= @player[:primaryNumber] %></p>
+<p> Birth Date: <%= @player[:birthDate] %></p>
+<p> Age: <%= @player[:currentAge] %></p>
+<p> Birth City: <%= @player[:birthCity] %></p>
+<p> Birth Country: <%= @player[:birthCountry] %></p>
+<p> Nationality: <%= @player[:nationality] %></p>
+<p> Height: <%= @player[:height] %></p>
+<p> Weight: <%= @player[:weight] %></p>
+<p> Active: <% if @player[:active] == true %>
+    Yes
+    <% else %>
+    No
+    <% end %></p>
+<p> Shoots/Catches: <%= @player[:shootsCatches] %></p>
+<p> Captain? <%= @player[:captain] %></p>
+<p> Rookie? <%= @player[:rookie] %></p>
+<p> Current Team: <%= @player[:currentTeam][:name] %></p>
+<p> Primary Position: <%= @player[:primaryPosition][:name] %></p>

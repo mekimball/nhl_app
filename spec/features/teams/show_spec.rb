@@ -18,7 +18,6 @@ describe 'Team Index', type: :feature do
 
   it 'can link to team roster', :vcr do
     click_link('Team Roster')
-    save_and_open_page
     
     expect(current_path).to eq(team_players_path(14))
   end

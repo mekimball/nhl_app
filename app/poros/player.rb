@@ -4,7 +4,8 @@ class Player
               :position,
               :type,
               :link,
-              :id
+              :id,
+              :next_game
 
   def initialize(data)
     @name = data[:person][:fullName]
@@ -15,3 +16,4 @@ class Player
     @link = data[:link]
   end
 end
+# test[:teams].first[:nextGameSchedule][:dates].first[:date]

@@ -1,5 +1,6 @@
 <h1><%= @team[:name] %></h1>
 <%= link_to  "Team Roster", team_players_path(@team[:id]) %>
+
 <p>City: <%= @team[:venue][:city] %></p>
 <p>Abbreviation: <%= @team[:abbreviation] %></p>
 <p>Venue: <%= @team[:venue][:name] %></p>

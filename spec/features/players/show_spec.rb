@@ -10,3 +10,5 @@ describe 'Player Show', type: :feature do
     expect(page).to have_content('Nikita Kucherov')
   end
 end
+
+#test

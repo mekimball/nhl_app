@@ -8,5 +8,5 @@ describe 'Player Show', type: :feature do
 
   it 'can show player info', :vcr do
     expect(page).to have_content('Nikita Kucherov') 
-  end
+  end 
 end

@@ -44,6 +44,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'figaro'
+  gem 'simplecov'
 end
 
 group :test do

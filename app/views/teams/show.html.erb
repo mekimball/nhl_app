@@ -7,13 +7,15 @@
 <p>First Year of Play: <%= @team[:firstYearOfPlay] %></p>
 <p>Division: <%= @team[:division][:name] %></p>
 <h5>Next Game: <%= @next_game[:date] %></h5>
-<h5>Home Team: <%= @next_game[:games].first[:teams][:home][:team][:name] %></h5>
-<p>Wins: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %>
-<p>Losses: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %>
-<p>Overtime Losses: <%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %></p>
-<h5>Away Team: <%= @next_game[:games].first[:teams][:away][:team][:name] %></h5>
-<p>Wins: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %>
-<p>Losses: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %>
-<p>Overtime Losses: <%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %></p>
+<h5>Home Team:</h5>
+<p><%= @next_game[:games].first[:teams][:home][:team][:name] %>
+(<%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %> - 
+<%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %> - 
+<%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %>)</p>
+<h5>Away Team:</h5>
+<p><%= @next_game[:games].first[:teams][:away][:team][:name] %>
+(<%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %> - 
+<%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %> - 
+<%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %>)</p>
 <h3>Score: <%= @next_game[:games].first[:teams][:home][:score] %> - <%= @next_game[:games].first[:teams][:away][:score] %></h3>
 

@@ -1,6 +1,36 @@
-<center>
-  <h1><%= @team[:name] %></h1>
-</center>
+  <center>
+    <h1><%= @team[:name] %></h1>
+  </center>
+  
+<html>
+<head>
+<style>
+div.background {
+  background: url(Tampa_Bay_Lightning_Logo.png) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .8;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+
+        <div class="background">
+            <div class="transbox">
 
 <% @players.each do |player| %>
 <p>
@@ -8,3 +38,9 @@
     <%= link_to  "#{player.name}", player_path(player.id) %>
   </a></p>
 <% end %>
+
+  </div>
+</div>
+
+</body>
+</html>

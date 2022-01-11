@@ -2,9 +2,44 @@
 
 <h1>NHL TEAMS</h1>
 </center>
+
+<html>
+<head>
+<style>
+div.background {
+  background: url(Tampa_Bay_Lightning_Logo.png) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .8;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+
+        <div class="background">
+            <div class="transbox">
 <% @teams.each do |team| %>
 <p>
 <a class="one"
   <%= link_to "#{team.name}", team_path(team.id) %>
 </a></p>
 <% end %>
+  </div>
+</div>
+
+</body>
+</html>

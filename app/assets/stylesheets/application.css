@@ -45,9 +45,11 @@ a.one {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+
   a:hover {
   background-color: rgba(66, 78, 245, 0.338);
 }
+
 img {
   opacity: 0.5;
 }
@@ -55,8 +57,9 @@ img {
 body  {
   background-image: url('NHL_Shield.png');
   background-position: center;
-  background-size: 100%;
+  background-size: 50%;
   height: 50%;
   background-repeat: no-repeat;
   background-color: #00000000;
+  background-attachment: fixed;
 }

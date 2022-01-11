@@ -54,7 +54,8 @@ img {
 
 body  {
   background-image: url('NHL_Shield.png');
-  background-size: cover;
+  background-position: center;
+  background-size: 100%;
   height: 50%;
   background-repeat: no-repeat;
   background-color: #00000000;

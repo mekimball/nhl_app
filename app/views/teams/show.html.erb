@@ -1,13 +1,44 @@
-<h1><%= @team[:name] %></h1>
+
+<html>
+<head>
+<style>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+
+<h2><%= @team[:name] %></h1><p>
+<a class="one"
 <%= link_to  "Team Roster", team_players_path(@team[:id]) %>
+</a></p>
 
 <p>City: <%= @team[:venue][:city] %></p>
 <p>Abbreviation: <%= @team[:abbreviation] %></p>
 <p>Venue: <%= @team[:venue][:name] %></p>
 <p>First Year of Play: <%= @team[:firstYearOfPlay] %></p>
 <p>Division: <%= @team[:division][:name] %></p>
-<h5>Next Game: <%= @next_game[:date] %></h5>
+<h5>Next Game: <%= @next_game[:date] %> (<%= @team[:nextGameSchedule][:dates].first[:games].first[:status][:detailedState] %>)</h5>
 <h5>Home Team:</h5>
+
 <p><%= @next_game[:games].first[:teams][:home][:team][:name] %>
 (<%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %> - 
 <%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %> - 
@@ -18,4 +49,9 @@
 <%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %> - 
 <%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %>)</p>
 <h3>Score: <%= @next_game[:games].first[:teams][:home][:score] %> - <%= @next_game[:games].first[:teams][:away][:score] %></h3>
+    
+  </div>
+</div>
 
+</body>
+</html>

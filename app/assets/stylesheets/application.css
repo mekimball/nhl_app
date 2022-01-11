@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+p {
+  text-indent: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+h1{
+  font-family: "Times New Roman", Times, serif;
+}
+
+a.one {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+body  {
+  background-image: url('NHL_Shield.png');
+  object-fit: fill;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00000000;
+}

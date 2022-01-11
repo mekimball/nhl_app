@@ -1,19 +1,50 @@
-<h1><%= @player[:fullName] %></h1>
-<p> Number: <%= @player[:primaryNumber] %></p>
-<p> Birth Date: <%= @player[:birthDate] %></p>
-<p> Age: <%= @player[:currentAge] %></p>
-<p> Birth City: <%= @player[:birthCity] %></p>
-<p> Birth Country: <%= @player[:birthCountry] %></p>
-<p> Nationality: <%= @player[:nationality] %></p>
-<p> Height: <%= @player[:height] %></p>
-<p> Weight: <%= @player[:weight] %></p>
-<p> Active: <% if @player[:active] == true %>
-    Yes
-    <% else %>
-    No
-    <% end %></p>
-<p> Shoots/Catches: <%= @player[:shootsCatches] %></p>
-<p> Captain? <%= @player[:captain] %></p>
-<p> Rookie? <%= @player[:rookie] %></p>
-<p> Current Team: <%= @player[:currentTeam][:name] %></p>
-<p> Primary Position: <%= @player[:primaryPosition][:name] %></p>
+<html>
+<head>
+<style>
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+    <body>
+
+        <div class="background">
+            <div class="transbox">
+
+                <h1><%= @player[:fullName] %></h1>
+                <p> Number: <%= @player[:primaryNumber] %></p>
+                <p> Birth Date: <%= @player[:birthDate] %></p>
+                <p> Age: <%= @player[:currentAge] %></p>
+                <p> Birth City: <%= @player[:birthCity] %></p>
+                <p> Birth Country: <%= @player[:birthCountry] %></p>
+                <p> Nationality: <%= @player[:nationality] %></p>
+                <p> Height: <%= @player[:height] %></p>
+                <p> Weight: <%= @player[:weight] %></p>
+                <p> Active: <% if @player[:active] == true %>
+                    Yes
+                    <% else %>
+                    No
+                    <% end %></p>
+                <p> Shoots/Catches: <%= @player[:shootsCatches] %></p>
+                <p> Captain? <%= @player[:captain] %></p>
+                <p> Rookie? <%= @player[:rookie] %></p>
+                <p> Current Team: <%= @player[:currentTeam][:name] %></p>
+                <p> Primary Position: <%= @player[:primaryPosition][:name] %></p>
+            </div>
+        </div>
+    </body>
+</html>

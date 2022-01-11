@@ -1,5 +1,10 @@
-<h1><%= @team[:name] %></h1>
+<center>
+  <h1><%= @team[:name] %></h1>
+</center>
 
 <% @players.each do |player| %>
-  <p><%= link_to  "#{player.name}", player_path(player.id) %><p>
+<p>
+  <a class="one"
+    <%= link_to  "#{player.name}", player_path(player.id) %>
+  </a></p>
 <% end %>

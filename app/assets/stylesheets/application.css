@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ * {
+    font-family: "Helvetica Neue",sans-serif;
+    }
+
 p {
   text-indent: 25px;
   font-family: "Times New Roman", Times, serif;
@@ -56,6 +60,16 @@ img {
 
 body  {
   background-image: url('NHL_Shield.png');
+  background-position: center;
+  background-size: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  background-attachment: fixed;
+}
+
+.Lightning {
+  background: url(Tampa_Bay_Lightning_Logo.png);
   background-position: center;
   background-size: 50%;
   height: 50%;

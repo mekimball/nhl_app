@@ -1,43 +1,44 @@
 
 <html>
-<head>
-<style>
-div.background {
-  background: url(Tampa_Bay_Lightning_Logo.png) repeat;
-  border: 2px solid black;
-}
+  <head>
+    <style>
+      div.background {
+        background: url(Tampa_Bay_Lightning_Logo.png) repeat;
+        border: 2px solid black;
+      }
 
-div.transbox {
-  margin: 30px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: .8;
-}
+      div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: .8;
+      }
 
-div.transbox p {
-  font-weight: bold;
-  color: #000000;
-}
-</style>
-</head>
+      div.transbox p {
+        font-weight: bold;
+        color: #000000;
+      }
+    </style>
+  </head>
 <body>
 
 <div class="background">
   <div class="transbox">
 
-        <div class="background">
-            <div class="transbox">
-  <center>
-  <h1>NHL TEAMS</h1>
-  </center>
-<% @teams.each do |team| %>
-<p>
-<a class="one"
-  <%= link_to "#{team.name}", team_path(team.id) %>
-</a></p>
-<% end %>
-  </div>
-</div>
+    <div class="background">
+      <div class="transbox">
 
-</body>
+        <center>
+          <h1>NHL TEAMS</h1>
+        </center>
+
+        <% @teams.each do |team| %>
+        <p>
+        <a class="one"
+          <%= link_to "#{team.name}", team_path(team.id) %>
+        </a></p>
+        <% end %>
+      </div>
+    </div>
+  </body>
 </html>

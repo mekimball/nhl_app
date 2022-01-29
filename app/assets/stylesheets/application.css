@@ -15,13 +15,14 @@
  */
 
  * {
-    font-family: "Helvetica Neue",sans-serif;
+    font-family: "Times New Roman",sans-serif;
     }
 
 p {
   text-indent: 25px;
   font-family: "Times New Roman", Times, serif;
 }
+
 h1{
   font-family: "Times New Roman", Times, serif;
 }

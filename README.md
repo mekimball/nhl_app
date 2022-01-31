@@ -20,7 +20,7 @@ A little app I've been messing around with to get more familiar with Rails as we
 - For a team's roster: "https://statsapi.web.nhl.com/api/v1/teams/#{team_id}/roster"
 - For an individual player's stats: "https://statsapi.web.nhl.com/api/v1/people/#{player_id}
 
-##Upcoming Features
+## Upcoming Features
 - Implementing websockets for live score updates
 - Previous games score
 - Divide current game into columns with home and away teams scores

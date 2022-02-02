@@ -42,8 +42,12 @@ div.transbox p {
                     No
                     <% end %></p>
                 <p> Shoots/Catches: <%= @player[:shootsCatches] %></p>
-                <p> Captain? <%= @player[:captain] %></p>
-                <p> Rookie? <%= @player[:rookie] %></p>
+                <p> <%if @player[:captain] == true %>
+                      Captain
+                    <% end %></p>
+                <p> <% if @player[:rookie] == true %>
+                      Rookie
+                    <% end %></p>
                 <p> Current Team: <%= @player[:currentTeam][:name] %></p>
                 <p> Primary Position: <%= @player[:primaryPosition][:name] %></p>
             </div>

@@ -11,4 +11,9 @@ class PlayerService
     all = JSON.parse(response.body, symbolize_names: true)
     all[:people]
   end
+  
+  def self.single_season_player_details(player_id)
+    response = Faraday.get("https://statsapi.web.nhl.com/api/v1/people/#{player_id}/stats?stats=statsSingleSeason")
+    all = JSON.parse(response.body, symbolize_names: true)
+    all[:people]
 end

@@ -16,4 +16,5 @@ class PlayerService
     response = Faraday.get("https://statsapi.web.nhl.com/api/v1/people/#{player_id}/stats?stats=statsSingleSeason")
     all = JSON.parse(response.body, symbolize_names: true)
     all[:people]
+  end
 end

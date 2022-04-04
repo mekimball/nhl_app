@@ -39,6 +39,8 @@ gem 'jquery-rails'
 gem 'faraday-net_http'
 gem 'cgi'
 gem 'rubocop'
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

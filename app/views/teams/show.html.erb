@@ -35,18 +35,24 @@ div.transbox p {
 <p>First Year of Play: <%= @team[:firstYearOfPlay] %></p>
 <p>Division: <%= @team[:division][:name] %></p>
 <h5>Next Game: <%= @next_game[:date] %> (<%= @team[:nextGameSchedule][:dates].first[:games].first[:status][:detailedState] %>)</h5>
-<h5>Home Team:</h5>
+<table>
 
-<p><%= @next_game[:games].first[:teams][:home][:team][:name] %>
-(<%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %> - 
-<%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %> - 
-<%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %>)</p>
-<h5>Away Team:</h5>
-<p><%= @next_game[:games].first[:teams][:away][:team][:name] %>
-(<%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %> - 
-<%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %> - 
-<%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %>)</p>
-<h3>Score: <%= @next_game[:games].first[:teams][:home][:score] %> - <%= @next_game[:games].first[:teams][:away][:score] %></h3>
+  <tr>
+    <th><h3><%= @next_game[:games].first[:teams][:home][:team][:name] %></h3>
+    <center><h5>(<%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %> - 
+    <%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %> - 
+    <%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %>)</h5></center></th>
+    <th>                   </th>
+    <th><h3><%= @next_game[:games].first[:teams][:away][:team][:name] %></h3>
+    <center><h5>(<%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %> - 
+    <%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %> - 
+    <%= @next_game[:games].first[:teams][:away][:leagueRecord][:ot] %>)</h5></center></th>
+    </tr>
+    <tr>
+<th><center> <h1><%= @next_game[:games].first[:teams][:home][:score] %></center></h1></th> 
+<th>         -         </th>
+  <th><center><h1><%= @next_game[:games].first[:teams][:away][:score] %></center></h1></th>
+  </tr>
     
   </div>
 </div>

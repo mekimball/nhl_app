@@ -15,36 +15,36 @@
  */
 
  * {
-    font-family: "Times New Roman",sans-serif;
+    font-family: "Helvetica",sans-serif;
     }
 
 p {
   text-indent: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 
 h1{
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 
 h2{
   text-indent: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 
 h3{
   text-indent: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 
 h4{
   text-indent: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 
 h5{
   text-indent: 5px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Helvetica", Times, serif;
 }
 a.one {
   background-color: rgb(255, 255, 255);

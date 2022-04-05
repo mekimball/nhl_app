@@ -1,6 +1,19 @@
 <html>
 <head>
 <style>
+table, td, th {
+  border: 1px solid black;
+  color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
 div.background {
   background: url(Tampa_Bay_Lightning_Logo.png) repeat;
   border: 2px solid black;
@@ -42,7 +55,6 @@ div.transbox p {
     <center><h5>(<%= @next_game[:games].first[:teams][:home][:leagueRecord][:wins] %> - 
     <%= @next_game[:games].first[:teams][:home][:leagueRecord][:losses] %> - 
     <%= @next_game[:games].first[:teams][:home][:leagueRecord][:ot] %>)</h5></center></th>
-    <th>                   </th>
     <th><center><h3><%= @next_game[:games].first[:teams][:away][:team][:name] %></center></h3>
     <center><h5>(<%= @next_game[:games].first[:teams][:away][:leagueRecord][:wins] %> - 
     <%= @next_game[:games].first[:teams][:away][:leagueRecord][:losses] %> - 
@@ -50,7 +62,7 @@ div.transbox p {
     </tr>
     <tr>
 <th><center> <h1><%= @next_game[:games].first[:teams][:home][:score] %></center></h1></th> 
-<th>-</th>
+
   <th><center><h1><%= @next_game[:games].first[:teams][:away][:score] %></center></h1></th>
   </tr>
     

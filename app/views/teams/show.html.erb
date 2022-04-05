@@ -1,5 +1,11 @@
 <html>
 <head>
+    <script>
+        function autoRefresh() {
+            window.location = window.location.href;
+        }
+        setInterval('autoRefresh()', 30);
+    </script>
 <style>
 table, td, th {
   border: 1px solid black;
